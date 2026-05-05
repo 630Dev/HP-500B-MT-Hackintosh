@@ -24,11 +24,14 @@ Ethernet controller: Realtek RTL8100
 
 ## WHAT'S BROKEN
 For some reason when you shutdown or restart the system, it hangs on a black screen which from there you have to manually shutdown/restart the system.
+
 Sleep mode hibernates the PC and resets the CMOS every time.
 
 ## PRE-INSTALL DEPLOYMENT
 
 Grab [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) and generate a serial with the SMBIOS "MacPro6,1" (without quotes)
+
+If you don't have a WiFi card installed and would like to use Ethernet, delete itlwm.kext from both your config.plist and the EFI folder.
 
 ## My sincere thanks to:
 - [Acidanthera](https://github.com/acidanthera)
